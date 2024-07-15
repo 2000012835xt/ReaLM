@@ -1,0 +1,2428 @@
+0.0005
+loading model
+smoothing
+tokenizer
+loading dataset
+decoder.layers.0.self_attn
+decoder.layers.1.self_attn
+decoder.layers.2.self_attn
+decoder.layers.3.self_attn
+decoder.layers.4.self_attn
+decoder.layers.5.self_attn
+decoder.layers.6.self_attn
+decoder.layers.7.self_attn
+decoder.layers.8.self_attn
+decoder.layers.9.self_attn
+decoder.layers.10.self_attn
+decoder.layers.11.self_attn
+decoder.layers.12.self_attn
+decoder.layers.13.self_attn
+decoder.layers.14.self_attn
+decoder.layers.15.self_attn
+decoder.layers.16.self_attn
+decoder.layers.17.self_attn
+decoder.layers.18.self_attn
+decoder.layers.19.self_attn
+decoder.layers.20.self_attn
+decoder.layers.21.self_attn
+decoder.layers.22.self_attn
+decoder.layers.23.self_attn
+noisy_model quantized
+OPTForCausalLM(
+  (model): OPTModel(
+    (decoder): OPTDecoder(
+      (embed_tokens): Embedding(50272, 2048, padding_idx=1)
+      (embed_positions): OPTLearnedPositionalEmbedding(2050, 2048)
+      (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+      (layers): ModuleList(
+        (0): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0005)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0005)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (1): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0005)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0005)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (2): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0005)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0005)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (3): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0005)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0005)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (4): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0005)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0005)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (5): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0005)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0005)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (6): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0005)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0005)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (7): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0005)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0005)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (8): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0005)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0005)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (9): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0005)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0005)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (10): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0005)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0005)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (11): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0005)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0005)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (12): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0005)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0005)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (13): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0005)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0005)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (14): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0005)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0005)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (15): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0005)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0005)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (16): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0005)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0005)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (17): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0005)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0005)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (18): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0005)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0005)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (19): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0005)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0005)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (20): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0005)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0005)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (21): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0005)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0005)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (22): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0005)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0005)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (23): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0005)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0005)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+      )
+    )
+  )
+  (lm_head): Linear(in_features=2048, out_features=50272, bias=False)
+)
+evaluating
+0.00020538098172109262
+err_prob= 0.0005 0.00020538098172109262 tensor(29817.0723, device='cuda:0')
+0.0
+loading model
+smoothing
+tokenizer
+loading dataset
+decoder.layers.0.self_attn
+decoder.layers.1.self_attn
+decoder.layers.2.self_attn
+decoder.layers.3.self_attn
+decoder.layers.4.self_attn
+decoder.layers.5.self_attn
+decoder.layers.6.self_attn
+decoder.layers.7.self_attn
+decoder.layers.8.self_attn
+decoder.layers.9.self_attn
+decoder.layers.10.self_attn
+decoder.layers.11.self_attn
+decoder.layers.12.self_attn
+decoder.layers.13.self_attn
+decoder.layers.14.self_attn
+decoder.layers.15.self_attn
+decoder.layers.16.self_attn
+decoder.layers.17.self_attn
+decoder.layers.18.self_attn
+decoder.layers.19.self_attn
+decoder.layers.20.self_attn
+decoder.layers.21.self_attn
+decoder.layers.22.self_attn
+decoder.layers.23.self_attn
+noisy_model quantized
+OPTForCausalLM(
+  (model): OPTModel(
+    (decoder): OPTDecoder(
+      (embed_tokens): Embedding(50272, 2048, padding_idx=1)
+      (embed_positions): OPTLearnedPositionalEmbedding(2050, 2048)
+      (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+      (layers): ModuleList(
+        (0): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (1): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (2): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (3): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (4): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (5): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (6): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (7): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (8): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (9): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (10): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (11): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (12): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (13): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (14): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (15): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (16): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (17): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (18): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (19): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (20): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (21): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (22): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (23): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=0.0)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+      )
+    )
+  )
+  (lm_head): Linear(in_features=2048, out_features=50272, bias=False)
+)
+evaluating
+0.07907167796262066
+err_prob= 0.0 0.07907167796262066 tensor(915.6323, device='cuda:0')
+1e-08
+loading model
+smoothing
+tokenizer
+loading dataset
+decoder.layers.0.self_attn
+decoder.layers.1.self_attn
+decoder.layers.2.self_attn
+decoder.layers.3.self_attn
+decoder.layers.4.self_attn
+decoder.layers.5.self_attn
+decoder.layers.6.self_attn
+decoder.layers.7.self_attn
+decoder.layers.8.self_attn
+decoder.layers.9.self_attn
+decoder.layers.10.self_attn
+decoder.layers.11.self_attn
+decoder.layers.12.self_attn
+decoder.layers.13.self_attn
+decoder.layers.14.self_attn
+decoder.layers.15.self_attn
+decoder.layers.16.self_attn
+decoder.layers.17.self_attn
+decoder.layers.18.self_attn
+decoder.layers.19.self_attn
+decoder.layers.20.self_attn
+decoder.layers.21.self_attn
+decoder.layers.22.self_attn
+decoder.layers.23.self_attn
+noisy_model quantized
+OPTForCausalLM(
+  (model): OPTModel(
+    (decoder): OPTDecoder(
+      (embed_tokens): Embedding(50272, 2048, padding_idx=1)
+      (embed_positions): OPTLearnedPositionalEmbedding(2050, 2048)
+      (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+      (layers): ModuleList(
+        (0): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-08)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-08)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (1): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-08)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-08)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (2): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-08)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-08)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (3): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-08)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-08)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (4): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-08)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-08)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (5): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-08)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-08)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (6): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-08)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-08)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (7): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-08)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-08)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (8): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-08)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-08)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (9): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-08)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-08)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (10): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-08)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-08)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (11): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-08)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-08)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (12): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-08)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-08)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (13): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-08)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-08)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (14): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-08)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-08)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (15): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-08)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-08)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (16): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-08)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-08)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (17): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-08)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-08)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (18): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-08)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-08)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (19): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-08)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-08)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (20): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-08)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-08)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (21): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-08)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-08)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (22): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-08)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-08)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (23): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-08)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-08)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+      )
+    )
+  )
+  (lm_head): Linear(in_features=2048, out_features=50272, bias=False)
+)
+evaluating
+0.07578558225508318
+err_prob= 1e-08 0.07578558225508318 tensor(722.1687, device='cuda:0')
+1e-07
+loading model
+smoothing
+tokenizer
+loading dataset
+decoder.layers.0.self_attn
+decoder.layers.1.self_attn
+decoder.layers.2.self_attn
+decoder.layers.3.self_attn
+decoder.layers.4.self_attn
+decoder.layers.5.self_attn
+decoder.layers.6.self_attn
+decoder.layers.7.self_attn
+decoder.layers.8.self_attn
+decoder.layers.9.self_attn
+decoder.layers.10.self_attn
+decoder.layers.11.self_attn
+decoder.layers.12.self_attn
+decoder.layers.13.self_attn
+decoder.layers.14.self_attn
+decoder.layers.15.self_attn
+decoder.layers.16.self_attn
+decoder.layers.17.self_attn
+decoder.layers.18.self_attn
+decoder.layers.19.self_attn
+decoder.layers.20.self_attn
+decoder.layers.21.self_attn
+decoder.layers.22.self_attn
+decoder.layers.23.self_attn
+noisy_model quantized
+OPTForCausalLM(
+  (model): OPTModel(
+    (decoder): OPTDecoder(
+      (embed_tokens): Embedding(50272, 2048, padding_idx=1)
+      (embed_positions): OPTLearnedPositionalEmbedding(2050, 2048)
+      (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+      (layers): ModuleList(
+        (0): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-07)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-07)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (1): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-07)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-07)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (2): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-07)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-07)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (3): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-07)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-07)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (4): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-07)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-07)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (5): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-07)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-07)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (6): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-07)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-07)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (7): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-07)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-07)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (8): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-07)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-07)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (9): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-07)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-07)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (10): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-07)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-07)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (11): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-07)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-07)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (12): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-07)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-07)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (13): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-07)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-07)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (14): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-07)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-07)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (15): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-07)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-07)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (16): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-07)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-07)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (17): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-07)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-07)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (18): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-07)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-07)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (19): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-07)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-07)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (20): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-07)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-07)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (21): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-07)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-07)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (22): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-07)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-07)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (23): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-07)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-07)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+      )
+    )
+  )
+  (lm_head): Linear(in_features=2048, out_features=50272, bias=False)
+)
+evaluating
+0.0640788662969809
+err_prob= 1e-07 0.0640788662969809 tensor(757.1908, device='cuda:0')
+1e-06
+loading model
+smoothing
+tokenizer
+loading dataset
+decoder.layers.0.self_attn
+decoder.layers.1.self_attn
+decoder.layers.2.self_attn
+decoder.layers.3.self_attn
+decoder.layers.4.self_attn
+decoder.layers.5.self_attn
+decoder.layers.6.self_attn
+decoder.layers.7.self_attn
+decoder.layers.8.self_attn
+decoder.layers.9.self_attn
+decoder.layers.10.self_attn
+decoder.layers.11.self_attn
+decoder.layers.12.self_attn
+decoder.layers.13.self_attn
+decoder.layers.14.self_attn
+decoder.layers.15.self_attn
+decoder.layers.16.self_attn
+decoder.layers.17.self_attn
+decoder.layers.18.self_attn
+decoder.layers.19.self_attn
+decoder.layers.20.self_attn
+decoder.layers.21.self_attn
+decoder.layers.22.self_attn
+decoder.layers.23.self_attn
+noisy_model quantized
+OPTForCausalLM(
+  (model): OPTModel(
+    (decoder): OPTDecoder(
+      (embed_tokens): Embedding(50272, 2048, padding_idx=1)
+      (embed_positions): OPTLearnedPositionalEmbedding(2050, 2048)
+      (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+      (layers): ModuleList(
+        (0): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-06)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-06)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (1): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-06)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-06)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (2): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-06)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-06)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (3): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-06)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-06)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (4): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-06)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-06)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (5): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-06)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-06)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (6): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-06)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-06)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (7): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-06)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-06)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (8): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-06)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-06)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (9): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-06)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-06)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (10): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-06)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-06)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (11): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-06)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-06)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (12): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-06)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-06)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (13): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-06)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-06)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (14): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-06)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-06)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (15): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-06)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-06)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (16): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-06)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-06)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (17): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-06)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-06)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (18): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-06)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-06)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (19): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-06)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-06)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (20): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-06)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-06)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (21): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-06)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-06)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (22): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-06)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-06)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (23): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-06)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-06)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+      )
+    )
+  )
+  (lm_head): Linear(in_features=2048, out_features=50272, bias=False)
+)
+evaluating
+0.027110289587184228
+err_prob= 1e-06 0.027110289587184228 tensor(1686.9797, device='cuda:0')
+1e-05
+loading model
+smoothing
+tokenizer
+loading dataset
+decoder.layers.0.self_attn
+decoder.layers.1.self_attn
+decoder.layers.2.self_attn
+decoder.layers.3.self_attn
+decoder.layers.4.self_attn
+decoder.layers.5.self_attn
+decoder.layers.6.self_attn
+decoder.layers.7.self_attn
+decoder.layers.8.self_attn
+decoder.layers.9.self_attn
+decoder.layers.10.self_attn
+decoder.layers.11.self_attn
+decoder.layers.12.self_attn
+decoder.layers.13.self_attn
+decoder.layers.14.self_attn
+decoder.layers.15.self_attn
+decoder.layers.16.self_attn
+decoder.layers.17.self_attn
+decoder.layers.18.self_attn
+decoder.layers.19.self_attn
+decoder.layers.20.self_attn
+decoder.layers.21.self_attn
+decoder.layers.22.self_attn
+decoder.layers.23.self_attn
+noisy_model quantized
+OPTForCausalLM(
+  (model): OPTModel(
+    (decoder): OPTDecoder(
+      (embed_tokens): Embedding(50272, 2048, padding_idx=1)
+      (embed_positions): OPTLearnedPositionalEmbedding(2050, 2048)
+      (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+      (layers): ModuleList(
+        (0): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-05)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-05)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (1): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-05)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-05)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (2): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-05)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-05)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (3): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-05)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-05)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (4): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-05)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-05)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (5): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-05)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-05)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (6): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-05)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-05)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (7): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-05)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-05)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (8): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-05)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-05)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (9): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-05)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-05)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (10): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-05)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-05)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (11): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-05)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-05)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (12): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-05)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-05)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (13): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-05)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-05)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (14): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-05)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-05)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (15): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-05)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-05)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (16): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-05)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-05)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (17): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-05)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-05)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (18): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-05)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-05)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (19): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-05)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-05)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (20): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-05)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-05)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (21): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-05)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-05)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (22): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-05)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-05)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+        (23): OPTDecoderLayer(
+          (self_attn): OPTAttention(
+            (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+            (q_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-05)
+            (out_proj): NoisyW8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None, err_prob=1e-05)
+            (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+            (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+          )
+          (activation_fn): ReLU()
+          (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+          (fc1): W8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+          (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+        )
+      )
+    )
+  )
+  (lm_head): Linear(in_features=2048, out_features=50272, bias=False)
+)
+evaluating

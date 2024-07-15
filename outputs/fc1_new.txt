@@ -1,0 +1,384 @@
+0.0
+loading model
+smoothing
+tokenizer
+loading dataset
+decoder.layers.0.self_attn
+decoder.layers.1.self_attn
+decoder.layers.2.self_attn
+decoder.layers.3.self_attn
+decoder.layers.4.self_attn
+decoder.layers.5.self_attn
+decoder.layers.6.self_attn
+decoder.layers.7.self_attn
+decoder.layers.8.self_attn
+decoder.layers.9.self_attn
+decoder.layers.10.self_attn
+decoder.layers.11.self_attn
+decoder.layers.12.self_attn
+decoder.layers.13.self_attn
+decoder.layers.14.self_attn
+decoder.layers.15.self_attn
+decoder.layers.16.self_attn
+decoder.layers.17.self_attn
+decoder.layers.18.self_attn
+decoder.layers.19.self_attn
+decoder.layers.20.self_attn
+decoder.layers.21.self_attn
+decoder.layers.22.self_attn
+decoder.layers.23.self_attn
+noisy_model quantized
+OPTDecoderLayer(
+  (self_attn): OPTAttention(
+    (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+    (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+    (q_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+    (out_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+    (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+    (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+  )
+  (activation_fn): ReLU()
+  (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+  (fc1): NoisyW8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0)
+  (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+  (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+)
+evaluating
+0.7432737728486342
+err_prob= 0.0 0.7432737728486342 tensor(18.0447, device='cuda:0')
+1e-08
+loading model
+smoothing
+tokenizer
+loading dataset
+decoder.layers.0.self_attn
+decoder.layers.1.self_attn
+decoder.layers.2.self_attn
+decoder.layers.3.self_attn
+decoder.layers.4.self_attn
+decoder.layers.5.self_attn
+decoder.layers.6.self_attn
+decoder.layers.7.self_attn
+decoder.layers.8.self_attn
+decoder.layers.9.self_attn
+decoder.layers.10.self_attn
+decoder.layers.11.self_attn
+decoder.layers.12.self_attn
+decoder.layers.13.self_attn
+decoder.layers.14.self_attn
+decoder.layers.15.self_attn
+decoder.layers.16.self_attn
+decoder.layers.17.self_attn
+decoder.layers.18.self_attn
+decoder.layers.19.self_attn
+decoder.layers.20.self_attn
+decoder.layers.21.self_attn
+decoder.layers.22.self_attn
+decoder.layers.23.self_attn
+noisy_model quantized
+OPTDecoderLayer(
+  (self_attn): OPTAttention(
+    (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+    (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+    (q_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+    (out_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+    (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+    (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+  )
+  (activation_fn): ReLU()
+  (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+  (fc1): NoisyW8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-08)
+  (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+  (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+)
+evaluating
+0.7432737728486342
+err_prob= 1e-08 0.7432737728486342 tensor(18.0688, device='cuda:0')
+1e-07
+loading model
+smoothing
+tokenizer
+loading dataset
+decoder.layers.0.self_attn
+decoder.layers.1.self_attn
+decoder.layers.2.self_attn
+decoder.layers.3.self_attn
+decoder.layers.4.self_attn
+decoder.layers.5.self_attn
+decoder.layers.6.self_attn
+decoder.layers.7.self_attn
+decoder.layers.8.self_attn
+decoder.layers.9.self_attn
+decoder.layers.10.self_attn
+decoder.layers.11.self_attn
+decoder.layers.12.self_attn
+decoder.layers.13.self_attn
+decoder.layers.14.self_attn
+decoder.layers.15.self_attn
+decoder.layers.16.self_attn
+decoder.layers.17.self_attn
+decoder.layers.18.self_attn
+decoder.layers.19.self_attn
+decoder.layers.20.self_attn
+decoder.layers.21.self_attn
+decoder.layers.22.self_attn
+decoder.layers.23.self_attn
+noisy_model quantized
+OPTDecoderLayer(
+  (self_attn): OPTAttention(
+    (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+    (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+    (q_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+    (out_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+    (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+    (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+  )
+  (activation_fn): ReLU()
+  (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+  (fc1): NoisyW8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-07)
+  (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+  (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+)
+evaluating
+0.7436845348120764
+err_prob= 1e-07 0.7436845348120764 tensor(18.0614, device='cuda:0')
+1e-06
+loading model
+smoothing
+tokenizer
+loading dataset
+decoder.layers.0.self_attn
+decoder.layers.1.self_attn
+decoder.layers.2.self_attn
+decoder.layers.3.self_attn
+decoder.layers.4.self_attn
+decoder.layers.5.self_attn
+decoder.layers.6.self_attn
+decoder.layers.7.self_attn
+decoder.layers.8.self_attn
+decoder.layers.9.self_attn
+decoder.layers.10.self_attn
+decoder.layers.11.self_attn
+decoder.layers.12.self_attn
+decoder.layers.13.self_attn
+decoder.layers.14.self_attn
+decoder.layers.15.self_attn
+decoder.layers.16.self_attn
+decoder.layers.17.self_attn
+decoder.layers.18.self_attn
+decoder.layers.19.self_attn
+decoder.layers.20.self_attn
+decoder.layers.21.self_attn
+decoder.layers.22.self_attn
+decoder.layers.23.self_attn
+noisy_model quantized
+OPTDecoderLayer(
+  (self_attn): OPTAttention(
+    (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+    (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+    (q_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+    (out_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+    (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+    (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+  )
+  (activation_fn): ReLU()
+  (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+  (fc1): NoisyW8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-06)
+  (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+  (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+)
+evaluating
+0.7420414869583076
+err_prob= 1e-06 0.7420414869583076 tensor(18.4456, device='cuda:0')
+1e-05
+loading model
+smoothing
+tokenizer
+loading dataset
+decoder.layers.0.self_attn
+decoder.layers.1.self_attn
+decoder.layers.2.self_attn
+decoder.layers.3.self_attn
+decoder.layers.4.self_attn
+decoder.layers.5.self_attn
+decoder.layers.6.self_attn
+decoder.layers.7.self_attn
+decoder.layers.8.self_attn
+decoder.layers.9.self_attn
+decoder.layers.10.self_attn
+decoder.layers.11.self_attn
+decoder.layers.12.self_attn
+decoder.layers.13.self_attn
+decoder.layers.14.self_attn
+decoder.layers.15.self_attn
+decoder.layers.16.self_attn
+decoder.layers.17.self_attn
+decoder.layers.18.self_attn
+decoder.layers.19.self_attn
+decoder.layers.20.self_attn
+decoder.layers.21.self_attn
+decoder.layers.22.self_attn
+decoder.layers.23.self_attn
+noisy_model quantized
+OPTDecoderLayer(
+  (self_attn): OPTAttention(
+    (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+    (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+    (q_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+    (out_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+    (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+    (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+  )
+  (activation_fn): ReLU()
+  (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+  (fc1): NoisyW8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=1e-05)
+  (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+  (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+)
+evaluating
+0.7344423906346272
+err_prob= 1e-05 0.7344423906346272 tensor(21.3166, device='cuda:0')
+0.0001
+loading model
+smoothing
+tokenizer
+loading dataset
+decoder.layers.0.self_attn
+decoder.layers.1.self_attn
+decoder.layers.2.self_attn
+decoder.layers.3.self_attn
+decoder.layers.4.self_attn
+decoder.layers.5.self_attn
+decoder.layers.6.self_attn
+decoder.layers.7.self_attn
+decoder.layers.8.self_attn
+decoder.layers.9.self_attn
+decoder.layers.10.self_attn
+decoder.layers.11.self_attn
+decoder.layers.12.self_attn
+decoder.layers.13.self_attn
+decoder.layers.14.self_attn
+decoder.layers.15.self_attn
+decoder.layers.16.self_attn
+decoder.layers.17.self_attn
+decoder.layers.18.self_attn
+decoder.layers.19.self_attn
+decoder.layers.20.self_attn
+decoder.layers.21.self_attn
+decoder.layers.22.self_attn
+decoder.layers.23.self_attn
+noisy_model quantized
+OPTDecoderLayer(
+  (self_attn): OPTAttention(
+    (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+    (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+    (q_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+    (out_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+    (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+    (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+  )
+  (activation_fn): ReLU()
+  (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+  (fc1): NoisyW8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.0001)
+  (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+  (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+)
+evaluating
+0.6878209077839392
+err_prob= 0.0001 0.6878209077839392 tensor(216.1626, device='cuda:0')
+0.001
+loading model
+smoothing
+tokenizer
+loading dataset
+decoder.layers.0.self_attn
+decoder.layers.1.self_attn
+decoder.layers.2.self_attn
+decoder.layers.3.self_attn
+decoder.layers.4.self_attn
+decoder.layers.5.self_attn
+decoder.layers.6.self_attn
+decoder.layers.7.self_attn
+decoder.layers.8.self_attn
+decoder.layers.9.self_attn
+decoder.layers.10.self_attn
+decoder.layers.11.self_attn
+decoder.layers.12.self_attn
+decoder.layers.13.self_attn
+decoder.layers.14.self_attn
+decoder.layers.15.self_attn
+decoder.layers.16.self_attn
+decoder.layers.17.self_attn
+decoder.layers.18.self_attn
+decoder.layers.19.self_attn
+decoder.layers.20.self_attn
+decoder.layers.21.self_attn
+decoder.layers.22.self_attn
+decoder.layers.23.self_attn
+noisy_model quantized
+OPTDecoderLayer(
+  (self_attn): OPTAttention(
+    (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+    (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+    (q_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+    (out_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+    (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+    (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+  )
+  (activation_fn): ReLU()
+  (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+  (fc1): NoisyW8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.001)
+  (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+  (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+)
+evaluating
+0.12158554117888684
+err_prob= 0.001 0.12158554117888684 tensor(7970.1343, device='cuda:0')
+0.01
+loading model
+smoothing
+tokenizer
+loading dataset
+decoder.layers.0.self_attn
+decoder.layers.1.self_attn
+decoder.layers.2.self_attn
+decoder.layers.3.self_attn
+decoder.layers.4.self_attn
+decoder.layers.5.self_attn
+decoder.layers.6.self_attn
+decoder.layers.7.self_attn
+decoder.layers.8.self_attn
+decoder.layers.9.self_attn
+decoder.layers.10.self_attn
+decoder.layers.11.self_attn
+decoder.layers.12.self_attn
+decoder.layers.13.self_attn
+decoder.layers.14.self_attn
+decoder.layers.15.self_attn
+decoder.layers.16.self_attn
+decoder.layers.17.self_attn
+decoder.layers.18.self_attn
+decoder.layers.19.self_attn
+decoder.layers.20.self_attn
+decoder.layers.21.self_attn
+decoder.layers.22.self_attn
+decoder.layers.23.self_attn
+noisy_model quantized
+OPTDecoderLayer(
+  (self_attn): OPTAttention(
+    (k_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+    (v_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+    (q_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor)
+    (out_proj): W8A8Linear(2048, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+    (bmm1): W8A8BMM(act_quant=per_tensor, output_quant=None)
+    (bmm2): W8A8BMM(act_quant=per_tensor, output_quant=per_tensor)
+  )
+  (activation_fn): ReLU()
+  (self_attn_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+  (fc1): NoisyW8A8Linear(2048, 8192, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=per_tensor, err_prob=0.01)
+  (fc2): W8A8Linear(8192, 2048, bias=True, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+  (final_layer_norm): LayerNorm((2048,), eps=1e-05, elementwise_affine=True)
+)
+evaluating
+0.0
+err_prob= 0.01 0.0 tensor(20553.8066, device='cuda:0')

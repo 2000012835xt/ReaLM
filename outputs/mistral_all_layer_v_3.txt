@@ -1,0 +1,2656 @@
+1e-05
+loading model
+smoothing
+tokenizer
+loading dataset lambada
+loading dataset wikitext
+quantizing...
+layers.0.self_attn
+layers.1.self_attn
+layers.2.self_attn
+layers.3.self_attn
+layers.4.self_attn
+layers.5.self_attn
+layers.6.self_attn
+layers.7.self_attn
+layers.8.self_attn
+layers.9.self_attn
+layers.10.self_attn
+layers.11.self_attn
+layers.12.self_attn
+layers.13.self_attn
+layers.14.self_attn
+layers.15.self_attn
+layers.16.self_attn
+layers.17.self_attn
+layers.18.self_attn
+layers.19.self_attn
+layers.20.self_attn
+layers.21.self_attn
+layers.22.self_attn
+layers.23.self_attn
+layers.24.self_attn
+layers.25.self_attn
+layers.26.self_attn
+layers.27.self_attn
+layers.28.self_attn
+layers.29.self_attn
+layers.30.self_attn
+layers.31.self_attn
+noisy_model_quantized
+MistralForCausalLM(
+  (model): MistralModel(
+    (embed_tokens): Embedding(32000, 4096)
+    (layers): ModuleList(
+      (0): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=1e-05)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (1): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=1e-05)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (2): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=1e-05)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (3): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=1e-05)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (4): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=1e-05)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (5): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=1e-05)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (6): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=1e-05)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (7): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=1e-05)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (8): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=1e-05)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (9): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=1e-05)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (10): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=1e-05)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (11): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=1e-05)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (12): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=1e-05)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (13): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=1e-05)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (14): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=1e-05)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (15): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=1e-05)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (16): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=1e-05)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (17): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=1e-05)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (18): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=1e-05)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (19): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=1e-05)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (20): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=1e-05)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (21): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=1e-05)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (22): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=1e-05)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (23): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=1e-05)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (24): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=1e-05)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (25): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=1e-05)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (26): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=1e-05)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (27): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=1e-05)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (28): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=1e-05)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (29): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=1e-05)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (30): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=1e-05)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (31): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=1e-05)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+    )
+    (norm): MistralRMSNorm()
+  )
+  (lm_head): Linear(in_features=4096, out_features=32000, bias=False)
+)
+evaluating
+87.307
+5.621637344360352
+time_i 26.709348332881927
+0.0001
+loading model
+smoothing
+tokenizer
+loading dataset lambada
+loading dataset wikitext
+quantizing...
+layers.0.self_attn
+layers.1.self_attn
+layers.2.self_attn
+layers.3.self_attn
+layers.4.self_attn
+layers.5.self_attn
+layers.6.self_attn
+layers.7.self_attn
+layers.8.self_attn
+layers.9.self_attn
+layers.10.self_attn
+layers.11.self_attn
+layers.12.self_attn
+layers.13.self_attn
+layers.14.self_attn
+layers.15.self_attn
+layers.16.self_attn
+layers.17.self_attn
+layers.18.self_attn
+layers.19.self_attn
+layers.20.self_attn
+layers.21.self_attn
+layers.22.self_attn
+layers.23.self_attn
+layers.24.self_attn
+layers.25.self_attn
+layers.26.self_attn
+layers.27.self_attn
+layers.28.self_attn
+layers.29.self_attn
+layers.30.self_attn
+layers.31.self_attn
+noisy_model_quantized
+MistralForCausalLM(
+  (model): MistralModel(
+    (embed_tokens): Embedding(32000, 4096)
+    (layers): ModuleList(
+      (0): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.0001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (1): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.0001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (2): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.0001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (3): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.0001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (4): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.0001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (5): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.0001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (6): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.0001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (7): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.0001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (8): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.0001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (9): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.0001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (10): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.0001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (11): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.0001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (12): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.0001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (13): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.0001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (14): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.0001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (15): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.0001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (16): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.0001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (17): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.0001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (18): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.0001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (19): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.0001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (20): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.0001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (21): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.0001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (22): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.0001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (23): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.0001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (24): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.0001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (25): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.0001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (26): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.0001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (27): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.0001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (28): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.0001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (29): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.0001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (30): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.0001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (31): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.0001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+    )
+    (norm): MistralRMSNorm()
+  )
+  (lm_head): Linear(in_features=4096, out_features=32000, bias=False)
+)
+evaluating
+87.061
+5.626326084136963
+time_i 26.398494545618693
+0.001
+loading model
+smoothing
+tokenizer
+loading dataset lambada
+loading dataset wikitext
+quantizing...
+layers.0.self_attn
+layers.1.self_attn
+layers.2.self_attn
+layers.3.self_attn
+layers.4.self_attn
+layers.5.self_attn
+layers.6.self_attn
+layers.7.self_attn
+layers.8.self_attn
+layers.9.self_attn
+layers.10.self_attn
+layers.11.self_attn
+layers.12.self_attn
+layers.13.self_attn
+layers.14.self_attn
+layers.15.self_attn
+layers.16.self_attn
+layers.17.self_attn
+layers.18.self_attn
+layers.19.self_attn
+layers.20.self_attn
+layers.21.self_attn
+layers.22.self_attn
+layers.23.self_attn
+layers.24.self_attn
+layers.25.self_attn
+layers.26.self_attn
+layers.27.self_attn
+layers.28.self_attn
+layers.29.self_attn
+layers.30.self_attn
+layers.31.self_attn
+noisy_model_quantized
+MistralForCausalLM(
+  (model): MistralModel(
+    (embed_tokens): Embedding(32000, 4096)
+    (layers): ModuleList(
+      (0): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (1): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (2): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (3): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (4): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (5): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (6): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (7): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (8): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (9): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (10): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (11): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (12): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (13): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (14): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (15): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (16): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (17): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (18): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (19): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (20): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (21): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (22): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (23): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (24): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (25): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (26): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (27): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (28): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (29): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (30): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (31): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.001)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+    )
+    (norm): MistralRMSNorm()
+  )
+  (lm_head): Linear(in_features=4096, out_features=32000, bias=False)
+)
+evaluating
+86.568
+5.65504789352417
+time_i 36.698467926184335
+0.01
+loading model
+smoothing
+tokenizer
+loading dataset lambada
+loading dataset wikitext
+quantizing...
+layers.0.self_attn
+layers.1.self_attn
+layers.2.self_attn
+layers.3.self_attn
+layers.4.self_attn
+layers.5.self_attn
+layers.6.self_attn
+layers.7.self_attn
+layers.8.self_attn
+layers.9.self_attn
+layers.10.self_attn
+layers.11.self_attn
+layers.12.self_attn
+layers.13.self_attn
+layers.14.self_attn
+layers.15.self_attn
+layers.16.self_attn
+layers.17.self_attn
+layers.18.self_attn
+layers.19.self_attn
+layers.20.self_attn
+layers.21.self_attn
+layers.22.self_attn
+layers.23.self_attn
+layers.24.self_attn
+layers.25.self_attn
+layers.26.self_attn
+layers.27.self_attn
+layers.28.self_attn
+layers.29.self_attn
+layers.30.self_attn
+layers.31.self_attn
+noisy_model_quantized
+MistralForCausalLM(
+  (model): MistralModel(
+    (embed_tokens): Embedding(32000, 4096)
+    (layers): ModuleList(
+      (0): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.01)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (1): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.01)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (2): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.01)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (3): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.01)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (4): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.01)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (5): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.01)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (6): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.01)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (7): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.01)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (8): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.01)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (9): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.01)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (10): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.01)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (11): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.01)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (12): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.01)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (13): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.01)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (14): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.01)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (15): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.01)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (16): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.01)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (17): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.01)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (18): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.01)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (19): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.01)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (20): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.01)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (21): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.01)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (22): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.01)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (23): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.01)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (24): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.01)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (25): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.01)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (26): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.01)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (27): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.01)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (28): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.01)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (29): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.01)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (30): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.01)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (31): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (v_proj): NoisyW8A8Linear(4096, 1024, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token, err_prob=0.01)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_token, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_token, output_quant=per_token)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_channel, act_quant=per_token, output_quant=per_token)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+    )
+    (norm): MistralRMSNorm()
+  )
+  (lm_head): Linear(in_features=4096, out_features=32000, bias=False)
+)
+evaluating
+82.111
+6.01091194152832
+time_i 32.520598856608075
+acc_noisy_list [87.307, 87.061, 86.568, 82.111]
+87.307
+87.061
+86.568
+82.111
+ppl_noisy_list [5.621637344360352, 5.626326084136963, 5.65504789352417, 6.01091194152832]
+5.621637344360352
+5.626326084136963
+5.65504789352417
+6.01091194152832
+x_sum_list []
+time_sum, 122.332539443175

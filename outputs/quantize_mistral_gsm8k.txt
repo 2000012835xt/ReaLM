@@ -1,0 +1,725 @@
+0
+Loading tokenizer ...
+Loading model ...
+smoothing
+quantizing
+layers.0.self_attn
+layers.1.self_attn
+layers.2.self_attn
+layers.3.self_attn
+layers.4.self_attn
+layers.5.self_attn
+layers.6.self_attn
+layers.7.self_attn
+layers.8.self_attn
+layers.9.self_attn
+layers.10.self_attn
+layers.11.self_attn
+layers.12.self_attn
+layers.13.self_attn
+layers.14.self_attn
+layers.15.self_attn
+layers.16.self_attn
+layers.17.self_attn
+layers.18.self_attn
+layers.19.self_attn
+layers.20.self_attn
+layers.21.self_attn
+layers.22.self_attn
+layers.23.self_attn
+layers.24.self_attn
+layers.25.self_attn
+layers.26.self_attn
+layers.27.self_attn
+layers.28.self_attn
+layers.29.self_attn
+layers.30.self_attn
+layers.31.self_attn
+MistralForCausalLM(
+  (model): MistralModel(
+    (embed_tokens): Embedding(32000, 4096)
+    (layers): ModuleList(
+      (0): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (v_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_tensor, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_tensor, output_quant=per_tensor)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (1): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (v_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_tensor, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_tensor, output_quant=per_tensor)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (2): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (v_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_tensor, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_tensor, output_quant=per_tensor)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (3): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (v_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_tensor, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_tensor, output_quant=per_tensor)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (4): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (v_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_tensor, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_tensor, output_quant=per_tensor)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (5): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (v_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_tensor, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_tensor, output_quant=per_tensor)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (6): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (v_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_tensor, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_tensor, output_quant=per_tensor)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (7): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (v_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_tensor, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_tensor, output_quant=per_tensor)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (8): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (v_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_tensor, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_tensor, output_quant=per_tensor)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (9): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (v_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_tensor, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_tensor, output_quant=per_tensor)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (10): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (v_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_tensor, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_tensor, output_quant=per_tensor)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (11): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (v_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_tensor, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_tensor, output_quant=per_tensor)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (12): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (v_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_tensor, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_tensor, output_quant=per_tensor)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (13): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (v_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_tensor, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_tensor, output_quant=per_tensor)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (14): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (v_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_tensor, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_tensor, output_quant=per_tensor)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (15): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (v_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_tensor, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_tensor, output_quant=per_tensor)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (16): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (v_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_tensor, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_tensor, output_quant=per_tensor)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (17): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (v_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_tensor, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_tensor, output_quant=per_tensor)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (18): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (v_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_tensor, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_tensor, output_quant=per_tensor)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (19): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (v_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_tensor, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_tensor, output_quant=per_tensor)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (20): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (v_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_tensor, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_tensor, output_quant=per_tensor)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (21): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (v_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_tensor, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_tensor, output_quant=per_tensor)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (22): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (v_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_tensor, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_tensor, output_quant=per_tensor)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (23): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (v_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_tensor, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_tensor, output_quant=per_tensor)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (24): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (v_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_tensor, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_tensor, output_quant=per_tensor)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (25): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (v_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_tensor, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_tensor, output_quant=per_tensor)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (26): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (v_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_tensor, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_tensor, output_quant=per_tensor)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (27): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (v_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_tensor, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_tensor, output_quant=per_tensor)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (28): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (v_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_tensor, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_tensor, output_quant=per_tensor)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (29): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (v_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_tensor, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_tensor, output_quant=per_tensor)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (30): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (v_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_tensor, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_tensor, output_quant=per_tensor)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+      (31): MistralDecoderLayer(
+        (self_attn): MistralAttention(
+          (q_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (k_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (v_proj): W8A8Linear(4096, 1024, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (o_proj): W8A8Linear(4096, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (rotary_emb): MistralRotaryEmbedding()
+          (matmul1): W8A8MatMul(act_quant=per_tensor, output_quant=None)
+          (matmul2): W8A8MatMul(act_quant=per_tensor, output_quant=per_tensor)
+        )
+        (mlp): MistralMLP(
+          (gate_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (up_proj): W8A8Linear(4096, 14336, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (down_proj): W8A8Linear(14336, 4096, bias=False, weight_quant=per_tensor, act_quant=per_tensor, output_quant=None)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): MistralRMSNorm()
+        (post_attention_layernorm): MistralRMSNorm()
+      )
+    )
+    (norm): MistralRMSNorm()
+  )
+  (lm_head): Linear(in_features=4096, out_features=32000, bias=False)
+)
+Let's think step by step
+Let's think step by step
+Let's think step by step
+Let's think step by step
+Let's think step by step
+Let's think step by step
+Let's think step by step
+Let's think step by step
+Let's think step by step
+Let's think step by step
+Let's think step by step
+Let's think step by step
+Let's think step by step
+Let's think step by step
+Let's think step by step
+Let's think step by step
+Let's think step by step
+Let's think step by step
+Let's think step by
+[invalid] 18
+A ROBE takes 2000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+2000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 3
+How much profit did he make?
+Let's think step by step
+The answer is 150
+In 30 days, he made $1500.
+In 30 days, he made $1500.
+The answer is 150
+150 70000
+Let's think step by step
+In 2005, 60/2=30 kids came to the cookout.
+In 2006, 30/3*2=20 kids came to the cookout.
+The answer is 20
+20 540
+Let's think step by step
+Let's think step by step
+Let's think step by step
+Let's think step by step
+Let's think step by step
+Let's think step by step
+Let's think step by step
+Let's think step by step
+Let's think step by step
+Let's think step by step
+Let's think step by step
+Let's think step by step
+Let's think step by step
+Let's think step by step
+Let's think step by step
+Let's think step by step
+Let's think step by step
+Let's think step by step
+Let's think step by
+[invalid] 20
+Let's think step by step
+The total number of glasses is 16.
+The total number of glasses is 16.
+The total number of glasses is 16.
+The total number of glasses is 16.
+The total number of glasses is 16.
+The total number of glasses is 16.
+The total number of glasses is 16.
+The total number of glasses is 16.
+The total number of glasses is 16.
+The total number of glasses is 16.
+The total number of glasses is 16.
+The total number of glasses is 16.
+The total number of glasses is 16.
+16 64
+The answer is 20
+20 260
